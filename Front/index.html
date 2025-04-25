@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Correos</title>
+    <link rel="stylesheet" href="/Front/css/correos.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Enviar Correo</h2>
+        <form id="emailForm">
+            <label for="emailType">Tipo de correo</label>
+            <select id="emailType">
+                <option value="newAccount">Cuenta nueva</option>
+                <option value="forgotPassword">Recuperación de contraseña</option>
+                <option value="codeVerification">Código de verificación</option>
+                <option value="changedPassword">Cambio de contraseña</option>
+                <option value="stockUpdate">Actualización de stock</option>
+                <option value="shopping">Confirmación de compra</option>
+            </select>
+
+            <label for="emailAddress">Correo electrónico</label>
+            <input type="email" id="emailAddress" required placeholder="Ingresa tu correo electrónico">
+
+            <button type="submit">Enviar Correo</button>
+        </form>
+        
+        <!-- Aquí puedes agregar un mensaje de estado de envío -->
+        <div id="statusMessage"></div>
+    </div>
+
+    <!-- Correctamente referenciamos el archivo JS -->
+    <script src="/Front/js/correos.js"></script>
+</body>
+</html>
