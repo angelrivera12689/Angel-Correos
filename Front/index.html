@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enviar Correos</title>
     <link rel="stylesheet" href="/Front/css/correos.css">
+    
 </head>
 <body>
 
     <div class="form-container">
+        <!-- Logo Section -->
+        <div class="logo-container">
+            <img src="https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-6fc0-61f7-863a-9a5770264a35/raw?se=2025-04-25T22%3A16%3A47Z&sp=r&sv=2024-08-04&sr=b&scid=599448cd-26a1-5361-b0d7-d1cbabb5172c&skoid=ae70be19-8043-4428-a990-27c58b478304&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-25T00%3A02%3A23Z&ske=2025-04-26T00%3A02%3A23Z&sks=b&skv=2024-08-04&sig=kYuziKibJ2Ui4/szom334e6lFJfaeQqhfHkEm0UFWLA%3D" alt="Logo">
+        </div>
+
         <h2>Enviar Correo</h2>
         <form id="emailForm">
             <label for="emailType">Tipo de correo</label>
@@ -27,11 +33,10 @@
             <button type="submit">Enviar Correo</button>
         </form>
         
-        <!-- Aquí puedes agregar un mensaje de estado de envío -->
+        <!-- Estado del envío -->
         <div id="statusMessage"></div>
     </div>
 
-    <!-- Correctamente referenciamos el archivo JS -->
     <script src="/Front/js/correos.js"></script>
 </body>
 </html>
